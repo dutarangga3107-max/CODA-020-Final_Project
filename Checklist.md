@@ -29,26 +29,26 @@
 
 ### Role 1
 
-- [ ]  **`1.1.A1` Cari & finalkan dataset, pastikan bisa dibuka Python** **(tunggu 1.3.A1)** **(→ dipakai di 1.2.A1, 1.3.B1)**
-- [ ]  `1.1.A2` Cek format, jumlah baris/kolom
-- [ ]  `1.1.A3` Simpan raw data tanpa perubahan
+- [x]  **`1.1.A1` Cari & finalkan dataset, pastikan bisa dibuka Python** **(tunggu 1.3.A1)** **(→ dipakai di 1.2.A1, 1.3.B1)**
+- [x]  `1.1.A2` Cek format, jumlah baris/kolom
+- [x]  `1.1.A3` Simpan raw data tanpa perubahan
 
 ### Role 2
 
-- [ ]  `1.2.A1` Pelajari struktur dataset **(tunggu 1.1.A1)**
-- [ ]  `1.2.A2` Identifikasi primary key & relasi
+- [x]  `1.2.A1` Pelajari struktur dataset **(tunggu 1.1.A1)**
+- [x]  `1.2.A2` Identifikasi primary key & relasi
 
 ### Role 3
 
-- [ ]  **`1.3.A1` Pilih 1 SDG + 1 masalah spesifik** **(→ dipakai di 1.1.A1, 1.4.A1)**
-- [ ]  **`1.3.A2` Tentukan stakeholder + KPI utama** **(→ dipakai di 1.4.A1)**
-- [ ]  `1.3.A3` Susun 3–5 pertanyaan analisis
+- [x]  **`1.3.A1` Pilih 1 SDG + 1 masalah spesifik** **(→ dipakai di 1.1.A1, 1.4.A1)**
+- [x]  **`1.3.A2` Tentukan stakeholder + KPI utama** **(→ dipakai di 1.4.A1)**
+- [x]  `1.3.A3` Susun 3–5 pertanyaan analisis
 
 Format: Kami membantu [stakeholder] mengambil keputusan [X] dengan menganalisis [data], agar [metrik] naik/turun dari [baseline] ke [target].
 
 ### Role 4
 
-- [ ]  `1.4.A1` Struktur awal README (problem, SDG, stakeholder, dataset, role) **(tunggu 1.3.A1, 1.3.A2)**
+- [x]  `1.4.A1` Struktur awal README (problem, SDG, stakeholder, dataset, role) **(tunggu 1.3.A1, 1.3.A2)**
 - [ ]  `1.4.A2` Siapkan folder dokumentasi & screenshot
 
 ## 20.00 — Pahami Data
@@ -60,8 +60,8 @@ Format: Kami membantu [stakeholder] mengambil keputusan [X] dengan menganalisis 
 
 ### Role 2
 
-- [ ]  `1.2.B1` Rancang schema: tabel, tipe data, key, constraint
-- [ ]  `1.2.B2` Tentukan tabel/view untuk analyst & dashboard
+- [x]  `1.2.B1` Rancang schema: tabel, tipe data, key, constraint
+- [x]  `1.2.B2` Tentukan tabel/view untuk analyst & dashboard
 
 ### Role 3
 
@@ -83,7 +83,7 @@ Format: Kami membantu [stakeholder] mengambil keputusan [X] dengan menganalisis 
 
 ### Role 2
 
-- [ ]  **`1.2.C1` Finalisasi rancangan DB + mulai `schema.sql`** **(tunggu 1.1.B2)** **(→ dipakai di 2.2.A1)**
+- [x]  **`1.2.C1` Finalisasi rancangan DB + mulai `schema.sql`** **(tunggu 1.1.B2)** **(→ dipakai di 2.2.A1)**
 
 ### Role 3
 
