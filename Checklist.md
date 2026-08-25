@@ -22,8 +22,8 @@
 
 ## Persiapan — Semua Role
 
-- [x ]  `1.S.P1` Repo siap, semua bisa push
-- [x ]  `1.S.P2` Sepakati tools, struktur folder, role, output akhir
+- [x]  `1.S.P1` Repo siap, semua bisa push
+- [x]  `1.S.P2` Sepakati tools, struktur folder, role, output akhir
 
 ## 19.00 — Tentukan Masalah
 
