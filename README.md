@@ -1,15 +1,45 @@
 ## **FINAL PROJCET HUMAN TRAFICKING ANALYSIS**
 
-## **Latar Belakang**
+## **Data Engineering (Pipeline & Infrastructure)
+
+## **Background**
 Labour dan sexual exploitation dipengaruhi oleh berbagai faktor, seperti karakteristik demografis korban, sektor pekerjaan, jenis eksploitasi, dan pola recruitment. Data korban dapat dimanfaatkan untuk mengidentifikasi pola dan faktor resiko, termasuk menganalisis apakah hubungan korban dengan recruiter seperti keluarga, teman, atau stranger berkaitan dengan tingkat dan bentuk eksploitasi yang dialami. Analaisi ini membantu menemukan kelompok dan kondisi yang paling rentan sehingga intevensi dapat dilakukan secara tepat sasaran.
 
 ## **Problem Statement**
-Sulitnya mengidentifikasi faktor dan kombinasi kondisi yang berkaitan dengan tingginya resiko dan severity labour dan sexual exploitation, termasuk karakteristik korban, sektor pekerjaan, serta hubungan antara korban dan recruiter. Selain itu belum diketahui apakah recruitment melalui hubungan dekat seperti keluarga, teman, atau pasangan berkaitan dengan outcome eksploitasi yang lebih berat dibandingkan recruitment oleh stranger.
+Sulitnya mengidentifikasi kelompok korbann, sektor pekerjaan, dan pola recruitement yang memiliki resiko exploitasi lebih tinggi, serta memahami bagaimana karakteristik tersebut berkiatan dengan bentuk eksploitasi yang dialami korban. Belum diketahui apakah hubungan tertentu antara korban dan recruiter berkaitan dengan tingkat eksploitasi yang lebih tinggi dan kelompok demografis mana yang paling rentan terhadap pola recruitement tersebut.
 
 ## **Key Questions**
-1. Kelompok demografis mana yang menunjukan resiko eksploitasi tertinggi, dan bagaimana resiko ini bervariasi berdasrkan usia, jenis kelamin, dan kewarganegaraan?
-2. Sektor mana saja yang paling rentan terhadap eksploitasi, dan eksploitasi apa yang paling sering terjadi di sana?
-3. Apakah hubungan antara korban dan recruiter berkaitan dengan perbedaan outcome eksploitasi?
-4. Apakah korban yang direkrut melalui hubungan dekat seperti keluarga, teman dan pasangan mengalami eksploitasi yang lebih berat dibanding recruitment jalur stranger?
+1. Kelompok demografis mana yang memiliki resiko eksploitasi tertinggi berdasarkan usia, gender, dan citizhenship?
+2. Sektor mana saja yang paling rentan terhadap eksploitasi, dan bentuk eksploitasi apa yang paling banyak terjadi di sektor tersebut?
+3. Apakah hubungan antara korban dan recruiter berkaitan dengan perbedaan resiko dan bentuk eksploitasi yang dialami korban?
+4. Kelompok usia dan gender mana yang paling sering direkrut melalui hubungan dekat seperti family, friend, atau intimate partner, dan bagaimana tingkat eksploitasi kelompok tersebut?
 5. Kombinasi faktor demografis, sektor pekerajaan, dan recruitemnt relationship seperti apa yang membentuk profil korban dengan resiko eksploitasi paling tinggi?
 
+## **Key Performance Indicators (KPI)**
+**1. Exploitation Rate**
+  ** Explanation:** Mengukur persentase korban yang mengalami forced labour dari total korban.
+  ** Purpose:** Mengetahui proporsi keseluruhan korban yang mengalami eksploitasi.
+**2. Forced Labour Rate**
+  ** Explanation:** Mengukur persentase korban yang mengalami forced labour dari total korban.
+  ** Purpose:** Mengidentifikasi seberapa sering kasus kerja paksa terjadi dalam dataset ini. 
+**3. Sexual Exploitation Rate**
+  ** Explanation:** Mengukur persentase korban yang mengalami sexual exploitation dari total korban.
+  ** Purpose:** Mengetahui seberapa besar proporsi korban yang mengalami eksploitasi seksual.
+Debt Bondage Rate
+  ** Explanation:** Mengukur persentase korban yang mengalami debt bondage dari total korban.
+  ** Purpose:** Mengidentifikasi tingkat eksploitasi yang berkaitan dengan keterikatan utang.
+Document Withholding Rate
+  ** Explanation:** Mengukur persentase korban yang mengalami penahanan atau penyitaan dokumen dari total korban.
+  ** Purpose:** Mengetahui seberapa sering terjadi penahanan dokumen sebagao salah satu indikator resiko eksploitasi.
+High-Risk Sector Agriculture
+  ** Explanation:** Mengukur exploitation rate khusus pada korban yang bekerja di sektor Agriculture
+  ** Purpose:** Mengidentifikasi apakah sektor Agricukture merupakan sektor dengan resiko eksploitasi yang tinggi.
+High-Risk Age
+  ** Explanation:** Menemukan kelompok usia dengan exploitation rate tertinggi.
+  ** Purpose:** Mengidentifikasi kelompok usia yang paling rentan terhadap eksploitasi.
+High-Risk Citizenship
+  ** Explanation:** Mengukur exploitation rate berdasarkan kewarganegaraan korban.
+  ** Purpose:** Mengidentifikasi kelompok kewarganegaraan dengan tingkat resiko eksploitasi tertinggi.
+Recruitemnt Risk
+  ** Explanation:** Mengukur exploitation rate berdasarkan recruitment relationship atau hubungan antara korban dan pihak yang merekrutnya.
+  ** Purpose:** Mengidentifikasi pola hubungan rekrutmen yang memiliki tingkat resiko eksploitasi lebih tinggi.
