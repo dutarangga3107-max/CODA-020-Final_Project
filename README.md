@@ -12,3 +12,4 @@ Sulitnya mengidentifikasi faktor dan kombinasi kondisi yang berkaitan dengan tin
 3. Apakah hubungan antara korban dan recruiter berkaitan dengan perbedaan outcome eksploitasi?
 4. Apakah korban yang direkrut melalui hubungan dekat seperti keluarga, teman dan pasangan mengalami eksploitasi yang lebih berat dibanding recruitment jalur stranger?
 5. Kombinasi faktor demografis, sektor pekerajaan, dan recruitemnt relationship seperti apa yang membentuk profil korban dengan resiko eksploitasi paling tinggi?
+
