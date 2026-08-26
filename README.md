@@ -21,11 +21,13 @@ Proyek ini melibatkan berbagai stakeholder yang memiliki peran dalam pencegahan 
 | **Researchers / Peneliti** | Menganalisis pola perdagangan manusia, mengidentifikasi faktor risiko, dan menghasilkan temuan berbasis data untuk mendukung kebijakan | Sedang–Tinggi |
 
 ## **SDG**
+
+| SDG | Fokus | Keterkaitan dengan Human Trafficking |
 |---|---|---|
-| **SDG 5** | Kesetaraan Gender | Mengatasi kerentanan berbasis gender dan eksploitasi seksual |
-| **SDG 8** | Pekerjaan Layak dan Pertumbuhan Ekonomi | Mengatasi forced labour dan eksploitasi tenaga kerja |
-| **SDG 10** | Berkurangnya Kesenjangan | Mengidentifikasi dan mengurangi kerentanan kelompok tertentu |
-| **SDG 16** | Perdamaian, Keadilan dan Kelembagaan yang Tangguh | Mendukung hak asasi manusia, penegakan hukum, perlindungan korban, dan institusi yang kuat |
+| **SDG 5** | Kesetaraan Gender | Mengatasi kerentanan berbasis gender serta eksploitasi seksual dalam perdagangan manusia |
+| **SDG 8** | Pekerjaan Layak dan Pertumbuhan Ekonomi | Mengatasi forced labour dan eksploitasi tenaga kerja serta mendukung kondisi kerja yang layak |
+| **SDG 10** | Berkurangnya Kesenjangan | Mengurangi kerentanan kelompok sosial dan ekonomi tertentu terhadap perdagangan dan eksploitasi |
+| **SDG 16** | Perdamaian, Keadilan dan Kelembagaan yang Tangguh | Mendukung perlindungan hak asasi manusia, penegakan hukum, perlindungan korban, dan penguatan institusi |
 
 ## **Data Dictionary**
 
