@@ -55,8 +55,8 @@ Format: Kami membantu [stakeholder] mengambil keputusan [X] dengan menganalisis 
 
 ### Role 1
 
-- [ ]  `1.1.B1` Cek missing, duplicate, tipe data, nilai aneh
-- [ ]  **`1.1.B2` Tentukan proses cleaning, transformasi, validation rule** **(→ dipakai di 1.2.C1)**
+- [x]  `1.1.B1` Cek missing, duplicate, tipe data, nilai aneh
+- [x]  **`1.1.B2` Tentukan proses cleaning, transformasi, validation rule** **(→ dipakai di 1.2.C1)**
 
 ### Role 2
 
@@ -66,7 +66,7 @@ Format: Kami membantu [stakeholder] mengambil keputusan [X] dengan menganalisis 
 ### Role 3
 
 - [ ]  **`1.3.B1` Buat data dictionary** **(tunggu 1.1.A1)** **(→ dipakai di 1.4.B1)**
-- [ ]  `1.3.B2` Tentukan rumus KPI & baseline
+- [x]  `1.3.B2` Tentukan rumus KPI & baseline
 
 ### Role 4
 
