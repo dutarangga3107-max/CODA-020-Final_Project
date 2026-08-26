@@ -5,6 +5,87 @@
 ## **Background**
 Labour dan sexual exploitation dipengaruhi oleh berbagai faktor, seperti karakteristik demografis korban, sektor pekerjaan, jenis eksploitasi, dan pola recruitment. Data korban dapat dimanfaatkan untuk mengidentifikasi pola dan faktor resiko, termasuk menganalisis apakah hubungan korban dengan recruiter seperti keluarga, teman, atau stranger berkaitan dengan tingkat dan bentuk eksploitasi yang dialami. Analaisi ini membantu menemukan kelompok dan kondisi yang paling rentan sehingga intevensi dapat dilakukan secara tepat sasaran.
 
+## **Fenomena**
+Perkembangan Media Sosial dan Online Platforms semakin mempermudah traffickers dalam menemukan, mendekati, dan memanipulasi calon korban. Namun, recruitment tidak selalu dilakukan oleh orang asing. Hubungan dekat seperti keluarga, teman atau pasangan dapat menjadi jalur recruitment karena adanya kepercayaan dan kedekatan interpersonal. oleh karena itu, diperlukan analisis untuk mengetahui kelompok korban mana yang paling rentan, sektor eksploitasi apa yang paling berisiko, serta apakah hubungan korban dengan bentuk dan tingkat eksploitasi yang dialami.
+
+## Stakeholder
+
+Proyek ini melibatkan berbagai stakeholder yang memiliki peran dalam pencegahan human trafficking, perlindungan korban, penegakan hukum, serta pengembangan kebijakan dan strategi berbasis data.
+
+| Stakeholder | Peran | Kepentingan terhadap Proyek |
+|---|---|---|
+| **United Nations (UN)** | Mengembangkan kerangka kerja internasional, kebijakan, dan kerja sama dalam penanganan perdagangan manusia serta perlindungan hak asasi manusia | Tinggi |
+| **Kepolisian / Aparat Penegak Hukum** | Melakukan penyelidikan kasus, mengidentifikasi pelaku dan jaringan perdagangan manusia, serta mendukung proses penegakan hukum | Tinggi |
+| **UNICEF** | Melindungi anak dari perdagangan manusia, eksploitasi, kekerasan, dan bentuk pelanggaran lainnya | Tinggi |
+| **Perusahaan Platform Media Sosial** | Mendeteksi dan mencegah aktivitas terkait perdagangan manusia serta meningkatkan keamanan dan mekanisme pelaporan di platform | Tinggi |
+| **Researchers / Peneliti** | Menganalisis pola perdagangan manusia, mengidentifikasi faktor risiko, dan menghasilkan temuan berbasis data untuk mendukung kebijakan | Sedang–Tinggi |
+
+## **SDG**
+|---|---|---|
+| **SDG 5** | Kesetaraan Gender | Mengatasi kerentanan berbasis gender dan eksploitasi seksual |
+| **SDG 8** | Pekerjaan Layak dan Pertumbuhan Ekonomi | Mengatasi forced labour dan eksploitasi tenaga kerja |
+| **SDG 10** | Berkurangnya Kesenjangan | Mengidentifikasi dan mengurangi kerentanan kelompok tertentu |
+| **SDG 16** | Perdamaian, Keadilan dan Kelembagaan yang Tangguh | Mendukung hak asasi manusia, penegakan hukum, perlindungan korban, dan institusi yang kuat |
+
+## **Data Dictionary**
+
+### A. Demographic Variables
+
+| Column | Data Type | Definisi |
+|---|---|---|
+| `ageBroad` | str | Kelompok usia korban |
+| `gender` | str | Gender korban |
+| `citizenship` | str | Kewarganegaraan korban |
+
+### B. Recruitment Relationship
+
+| Column | Data Type | Definisi |
+|---|---|---|
+| `recruiterRelationFamily` | bool | Indikator apakah recruiter memiliki hubungan keluarga dengan korban |
+| `recruiterRelationFriend` | bool | Indikator apakah recruiter merupakan teman korban |
+| `recruiterRelationIntimatePartner` | bool | Indikator apakah recruiter merupakan pasangan atau intimate partner korban |
+| `recruiterRelationOther` | bool | Indikator apakah recruiter memiliki hubungan lain dengan korban atau tidak memiliki hubungan |
+
+### C. Sector
+
+| Column | Data Type | Definisi |
+|---|---|---|
+| `sectorOfLabourAgriculture` | bool | Indikator apakah eksploitasi berkaitan dengan sektor pertanian |
+| `sectorOfLabourConstruction` | bool | Indikator apakah eksploitasi berkaitan dengan sektor konstruksi |
+| `sectorOfLabourDomesticWork` | bool | Indikator apakah eksploitasi berkaitan dengan pekerjaan domestik |
+| `sectorOfLabourHospitality` | bool | Indikator apakah eksploitasi berkaitan dengan sektor hospitality |
+| `sectorOfSexProstitution` | bool | Indikator apakah eksploitasi berkaitan dengan prostitusi |
+| `sectorOfSexPornography` | bool | Indikator apakah eksploitasi berkaitan dengan pornografi |
+
+### D. Exploitation Outcome
+
+| Column | Data Type | Definisi |
+|---|---|---|
+| `isForcedLabour` | bool | Indikator apakah korban mengalami forced labour |
+| `isSexualExploit` | bool | Indikator apakah korban mengalami eksploitasi seksual |
+| `isOtherExploit` | bool | Indikator apakah korban mengalami bentuk eksploitasi lainnya |
+
+### E. Means Outcome
+
+| Column | Data Type | Definisi |
+|---|---|---|
+| `meansDebtBondageEarning` | bool | Indikator apakah debt bondage atau keterikatan melalui utang/penghasilan digunakan sebagai metode eksploitasi |
+| `meansThreats` | bool | Indikator apakah ancaman digunakan dalam proses trafficking atau eksploitasi |
+| `meansAbusePsyPhysSex` | bool | Indikator apakah kekerasan atau penyalahgunaan psikologis, fisik, atau seksual digunakan |
+| `meansFalsePromises` | bool | Indikator apakah janji palsu digunakan untuk merekrut atau mengeksploitasi korban |
+| `meansDrugsAlcohol` | bool | Indikator apakah drugs/alcohol terlibat dalam proses eksploitasi |
+| `meansDenyBasicNeeds` | bool | Indikator apakah kebutuhan dasar korban ditolak atau dibatasi |
+| `meansExcessiveWorkHours` | bool | Indikator apakah korban diberikan jam kerja yang berlebihan |
+| `meansWithholdDocs` | bool | Indikator apakah dokumen pribadi korban ditahan |
+
+### F. Supporting Variables
+
+| Column | Data Type | Definisi |
+|---|---|---|
+| `traffickMonths` | str | Durasi korban mengalami trafficking atau eksploitasi dalam bulan |
+| `CountryOfExploitation` | str | Negara tempat korban mengalami eksploitasi |
+| `yearOfRegistration` | float64 | Tahun ketika kasus korban dicatat atau diregistrasikan |
+
 ## **Problem Statement**
 Sulitnya mengidentifikasi kelompok korbann, sektor pekerjaan, dan pola recruitement yang memiliki resiko exploitasi lebih tinggi, serta memahami bagaimana karakteristik tersebut berkiatan dengan bentuk eksploitasi yang dialami korban. Belum diketahui apakah hubungan tertentu antara korban dan recruiter berkaitan dengan tingkat eksploitasi yang lebih tinggi dan kelompok demografis mana yang paling rentan terhadap pola recruitement tersebut.
 
