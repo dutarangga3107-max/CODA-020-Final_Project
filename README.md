@@ -1,6 +1,6 @@
 ## **FINAL PROJCET HUMAN TRAFICKING ANALYSIS**
 
-## **Data Engineering (Pipeline & Infrastructure)
+## **Data Engineering (Pipeline & Infrastructure)**
 
 ## **Background**
 Labour dan sexual exploitation dipengaruhi oleh berbagai faktor, seperti karakteristik demografis korban, sektor pekerjaan, jenis eksploitasi, dan pola recruitment. Data korban dapat dimanfaatkan untuk mengidentifikasi pola dan faktor resiko, termasuk menganalisis apakah hubungan korban dengan recruiter seperti keluarga, teman, atau stranger berkaitan dengan tingkat dan bentuk eksploitasi yang dialami. Analaisi ini membantu menemukan kelompok dan kondisi yang paling rentan sehingga intevensi dapat dilakukan secara tepat sasaran.
