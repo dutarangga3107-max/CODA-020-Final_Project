@@ -21,32 +21,32 @@ Sulitnya mengidentifikasi kelompok korbann, sektor pekerjaan, dan pola recruitem
   ** Purpose:** Mengetahui proporsi keseluruhan korban yang mengalami eksploitasi.
   
 **2. Forced Labour Rate**
-  ** Explanation:** Mengukur persentase korban yang mengalami forced labour dari total korban.
-  ** Purpose:** Mengidentifikasi seberapa sering kasus kerja paksa terjadi dalam dataset ini. 
+  **Explanation:** Mengukur persentase korban yang mengalami forced labour dari total korban.
+  **Purpose:** Mengidentifikasi seberapa sering kasus kerja paksa terjadi dalam dataset ini. 
   
 **3. Sexual Exploitation Rate**
-  ** Explanation:** Mengukur persentase korban yang mengalami sexual exploitation dari total korban.
-  ** Purpose:** Mengetahui seberapa besar proporsi korban yang mengalami eksploitasi seksual.
+  **Explanation:** Mengukur persentase korban yang mengalami sexual exploitation dari total korban.
+  **Purpose:** Mengetahui seberapa besar proporsi korban yang mengalami eksploitasi seksual.
 **4. Debt Bondage Rate
-  ** Explanation:** Mengukur persentase korban yang mengalami debt bondage dari total korban.
-  ** Purpose:** Mengidentifikasi tingkat eksploitasi yang berkaitan dengan keterikatan utang.
+  **Explanation:** Mengukur persentase korban yang mengalami debt bondage dari total korban.
+  **Purpose:** Mengidentifikasi tingkat eksploitasi yang berkaitan dengan keterikatan utang.
   
-**5. Document Withholding Rate
-  ** Explanation:** Mengukur persentase korban yang mengalami penahanan atau penyitaan dokumen dari total korban.
-  ** Purpose:** Mengetahui seberapa sering terjadi penahanan dokumen sebagao salah satu indikator resiko eksploitasi.
+**5. Document Withholding Rate**
+  **Explanation:** Mengukur persentase korban yang mengalami penahanan atau penyitaan dokumen dari total korban.
+  **Purpose:** Mengetahui seberapa sering terjadi penahanan dokumen sebagao salah satu indikator resiko eksploitasi.
   
-**6. High-Risk Sector Agriculture
-  ** Explanation:** Mengukur exploitation rate khusus pada korban yang bekerja di sektor Agriculture
-  ** Purpose:** Mengidentifikasi apakah sektor Agricukture merupakan sektor dengan resiko eksploitasi yang tinggi.
+**6. High-Risk Sector Agriculture**
+  **Explanation:** Mengukur exploitation rate khusus pada korban yang bekerja di sektor Agriculture
+  **Purpose:** Mengidentifikasi apakah sektor Agricukture merupakan sektor dengan resiko eksploitasi yang tinggi.
   
-**7. High-Risk Age
-  ** Explanation:** Menemukan kelompok usia dengan exploitation rate tertinggi.
-  ** Purpose:** Mengidentifikasi kelompok usia yang paling rentan terhadap eksploitasi.
+**7. High-Risk Age**
+  **Explanation:** Menemukan kelompok usia dengan exploitation rate tertinggi.
+  **Purpose:** Mengidentifikasi kelompok usia yang paling rentan terhadap eksploitasi.
   
-**8. High-Risk Citizenship
-  ** Explanation:** Mengukur exploitation rate berdasarkan kewarganegaraan korban.
-  ** Purpose:** Mengidentifikasi kelompok kewarganegaraan dengan tingkat resiko eksploitasi tertinggi.
+**8. High-Risk Citizenship**
+  **Explanation:** Mengukur exploitation rate berdasarkan kewarganegaraan korban.
+  **Purpose:** Mengidentifikasi kelompok kewarganegaraan dengan tingkat resiko eksploitasi tertinggi.
   
-**9. Recruitement Risk
-  ** Explanation:** Mengukur exploitation rate berdasarkan recruitment relationship atau hubungan antara korban dan pihak yang merekrutnya.
-  ** Purpose:** Mengidentifikasi pola hubungan rekrutmen yang memiliki tingkat resiko eksploitasi lebih tinggi.
+**9. Recruitement Risk**
+  **Explanation:** Mengukur exploitation rate berdasarkan recruitment relationship atau hubungan antara korban dan pihak yang merekrutnya.
+  **Purpose:** Mengidentifikasi pola hubungan rekrutmen yang memiliki tingkat resiko eksploitasi lebih tinggi.
