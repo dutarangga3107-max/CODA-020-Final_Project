@@ -16,54 +16,38 @@ Sulitnya mengidentifikasi kelompok korbann, sektor pekerjaan, dan pola recruitem
 5. Kombinasi faktor demografis, sektor pekerajaan, dan recruitemnt relationship seperti apa yang membentuk profil korban dengan resiko eksploitasi paling tinggi?
 
 ## **Key Performance Indicators (KPI)**
-**1. Exploitation Rate**
-
-  **Explanation:** Mengukur persentase korban yang mengalami forced labour dari total korban.
+**1. Exploitation Rate**<br>
+**Explanation:** Mengukur persentase korban yang mengalami forced labour dari total korban.<br>
+**Purpose:** Mengetahui proporsi keseluruhan korban yang mengalami eksploitasi.
   
-  **Purpose:** Mengetahui proporsi keseluruhan korban yang mengalami eksploitasi.
+**2. Forced Labour Rate**<br>
+**Explanation:** Mengukur persentase korban yang mengalami forced labour dari total korban.<br>
+**Purpose:** Mengidentifikasi seberapa sering kasus kerja paksa terjadi dalam dataset ini. 
   
-**2. Forced Labour Rate**
-
-  **Explanation:** Mengukur persentase korban yang mengalami forced labour dari total korban.
+**3. Sexual Exploitation Rate**<br>
+**Explanation:** Mengukur persentase korban yang mengalami sexual exploitation dari total korban.<br>
+**Purpose:** Mengetahui seberapa besar proporsi korban yang mengalami eksploitasi seksual.
   
-  **Purpose:** Mengidentifikasi seberapa sering kasus kerja paksa terjadi dalam dataset ini. 
+**4. Debt Bondage Rate**<br>
+**Explanation:** Mengukur persentase korban yang mengalami debt bondage dari total korban.<br>
+**Purpose:** Mengidentifikasi tingkat eksploitasi yang berkaitan dengan keterikatan utang.
   
-**3. Sexual Exploitation Rate**
-
-  **Explanation:** Mengukur persentase korban yang mengalami sexual exploitation dari total korban.
+**5. Document Withholding Rate**<br>
+**Explanation:** Mengukur persentase korban yang mengalami penahanan atau penyitaan dokumen dari total korban.<br>
+**Purpose:** Mengetahui seberapa sering terjadi penahanan dokumen sebagao salah satu indikator resiko eksploitasi.
   
-  **Purpose:** Mengetahui seberapa besar proporsi korban yang mengalami eksploitasi seksual.
+**6. High-Risk Sector Agriculture**<br>
+**Explanation:** Mengukur exploitation rate khusus pada korban yang bekerja di sektor Agriculture.<br>
+**Purpose:** Mengidentifikasi apakah sektor Agricukture merupakan sektor dengan resiko eksploitasi yang tinggi.
   
-**4. Debt Bondage Rate**
-
-  **Explanation:** Mengukur persentase korban yang mengalami debt bondage dari total korban.
+**7. High-Risk Age**<br>
+**Explanation:** Menemukan kelompok usia dengan exploitation rate tertinggi.<br>
+**Purpose:** Mengidentifikasi kelompok usia yang paling rentan terhadap eksploitasi.
   
-  **Purpose:** Mengidentifikasi tingkat eksploitasi yang berkaitan dengan keterikatan utang.
+**8. High-Risk Citizenship**<br>
+**Explanation:** Mengukur exploitation rate berdasarkan kewarganegaraan korban.<br>
+**Purpose:** Mengidentifikasi kelompok kewarganegaraan dengan tingkat resiko eksploitasi tertinggi.
   
-**5. Document Withholding Rate**
-
-  **Explanation:** Mengukur persentase korban yang mengalami penahanan atau penyitaan dokumen dari total korban.
-  
-  **Purpose:** Mengetahui seberapa sering terjadi penahanan dokumen sebagao salah satu indikator resiko eksploitasi.
-  
-**6. High-Risk Sector Agriculture**
-
-  **Explanation:** Mengukur exploitation rate khusus pada korban yang bekerja di sektor Agriculture.
-  
-  **Purpose:** Mengidentifikasi apakah sektor Agricukture merupakan sektor dengan resiko eksploitasi yang tinggi.
-  
-**7. High-Risk Age**
-
-  **Explanation:** Menemukan kelompok usia dengan exploitation rate tertinggi.
-  
-  **Purpose:** Mengidentifikasi kelompok usia yang paling rentan terhadap eksploitasi.
-  
-**8. High-Risk Citizenship**
-
-  **Explanation:** Mengukur exploitation rate berdasarkan kewarganegaraan korban.
-  
-  **Purpose:** Mengidentifikasi kelompok kewarganegaraan dengan tingkat resiko eksploitasi tertinggi.
-  
-**9. Recruitement Risk**
-  **Explanation:** Mengukur exploitation rate berdasarkan recruitment relationship atau hubungan antara korban dan pihak yang merekrutnya.
-  **Purpose:** Mengidentifikasi pola hubungan rekrutmen yang memiliki tingkat resiko eksploitasi lebih tinggi.
+**9. Recruitement Risk**<br>
+**Explanation:** Mengukur exploitation rate berdasarkan recruitment relationship atau hubungan antara korban dan pihak yang merekrutnya.<br>
+**Purpose:** Mengidentifikasi pola hubungan rekrutmen yang memiliki tingkat resiko eksploitasi lebih tinggi.
