@@ -17,34 +17,51 @@ Sulitnya mengidentifikasi kelompok korbann, sektor pekerjaan, dan pola recruitem
 
 ## **Key Performance Indicators (KPI)**
 **1. Exploitation Rate**
-  ** Explanation:** Mengukur persentase korban yang mengalami forced labour dari total korban.
-  ** Purpose:** Mengetahui proporsi keseluruhan korban yang mengalami eksploitasi.
+
+  **Explanation:** Mengukur persentase korban yang mengalami forced labour dari total korban.
+  
+  **Purpose:** Mengetahui proporsi keseluruhan korban yang mengalami eksploitasi.
   
 **2. Forced Labour Rate**
+
   **Explanation:** Mengukur persentase korban yang mengalami forced labour dari total korban.
+  
   **Purpose:** Mengidentifikasi seberapa sering kasus kerja paksa terjadi dalam dataset ini. 
   
 **3. Sexual Exploitation Rate**
+
   **Explanation:** Mengukur persentase korban yang mengalami sexual exploitation dari total korban.
+  
   **Purpose:** Mengetahui seberapa besar proporsi korban yang mengalami eksploitasi seksual.
-**4. Debt Bondage Rate
+  
+**4. Debt Bondage Rate**
+
   **Explanation:** Mengukur persentase korban yang mengalami debt bondage dari total korban.
+  
   **Purpose:** Mengidentifikasi tingkat eksploitasi yang berkaitan dengan keterikatan utang.
   
 **5. Document Withholding Rate**
+
   **Explanation:** Mengukur persentase korban yang mengalami penahanan atau penyitaan dokumen dari total korban.
+  
   **Purpose:** Mengetahui seberapa sering terjadi penahanan dokumen sebagao salah satu indikator resiko eksploitasi.
   
 **6. High-Risk Sector Agriculture**
-  **Explanation:** Mengukur exploitation rate khusus pada korban yang bekerja di sektor Agriculture
+
+  **Explanation:** Mengukur exploitation rate khusus pada korban yang bekerja di sektor Agriculture.
+  
   **Purpose:** Mengidentifikasi apakah sektor Agricukture merupakan sektor dengan resiko eksploitasi yang tinggi.
   
 **7. High-Risk Age**
+
   **Explanation:** Menemukan kelompok usia dengan exploitation rate tertinggi.
+  
   **Purpose:** Mengidentifikasi kelompok usia yang paling rentan terhadap eksploitasi.
   
 **8. High-Risk Citizenship**
+
   **Explanation:** Mengukur exploitation rate berdasarkan kewarganegaraan korban.
+  
   **Purpose:** Mengidentifikasi kelompok kewarganegaraan dengan tingkat resiko eksploitasi tertinggi.
   
 **9. Recruitement Risk**
