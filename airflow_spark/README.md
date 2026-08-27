@@ -1,0 +1,8 @@
+# Airflow with Pyspark inside
+
+- cd `**********/CODA-020-Final_Project/airflow_spark`
+- build docker using docker `docker build -t airflow-spark .`
+- run docker compose using `docker compose -f airflow.yaml up -d`
+
+# Running the python script on Airflow
+- run the script by `sudo -u airflow python /opt/airflow/scripts/script.py` # kalo eror run tanpa sudo
