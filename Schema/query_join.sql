@@ -21,11 +21,11 @@ SELECT
     e.isforcedlabour,
     e.issexualexploit,
     e.isotherexploit,
-    e.sectorlabouragriculture,
-    e.sectorlabourdomesticwork,
-    e.sectorlabourhospitality,
-    e.sectorlabourprostitution,
-    e.sectorlabourpornography
+    e.sectoroflabouragriculture,
+    e.sectoroflabourdomesticwork,
+    e.sectoroflabourhospitality,
+    e.sectorsexprostitution,
+    e.sectorsexpornography
 FROM fact_trafficking_cases f
 JOIN dim_exploitation e ON f.exploitation_id = e.exploitation_id;
 
@@ -54,10 +54,10 @@ SELECT
     e.isforcedlabour,
     e.issexualexploit,
     e.isotherexploit,
-    e.sectorlabouragriculture,
-    e.sectorlabourconstruction,
-    e.sectorlabourdomesticwork,
-    e.sectorlabourhospitality,
+    e.sectoroflabouragriculture,
+    e.sectoroflabourconstruction,
+    e.sectoroflabourdomesticwork,
+    e.sectoroflabourhospitality,
     e.sectorsexprostitution,
     e.sectorsexpornography,
     m.meansdebtbondageearnings,
