@@ -32,8 +32,6 @@ Proyek ini melibatkan berbagai stakeholder yang memiliki peran dalam pencegahan 
 
 ## **Data Dictionary**
 
-# Data Dictionary
-
 ### A. DEMOGRAPHICS
 
 | Column | Data Type | Definisi |
@@ -119,6 +117,8 @@ Sulitnya mengidentifikasi kelompok korbann, sektor pekerjaan, dan pola recruitem
 3. Apakah hubungan antara korban dan recruiter berkaitan dengan perbedaan resiko dan bentuk eksploitasi yang dialami korban?
 4. Kelompok usia dan gender mana yang paling sering direkrut melalui hubungan dekat seperti family, friend, atau intimate partner, dan bagaimana tingkat eksploitasi kelompok tersebut?
 5. Kombinasi faktor demografis, sektor pekerajaan, dan recruitemnt relationship seperti apa yang membentuk profil korban dengan resiko eksploitasi paling tinggi?
+6. Bagaimana tren jumlah korban berdasarkan recruitment relationship dari tahun ke tahun?
+
 
 ## **Key Performance Indicators (KPI)**
 **1. Exploitation Rate**<br>
