@@ -157,15 +157,6 @@ Sulitnya mengidentifikasi kelompok korbann, sektor pekerjaan, dan pola recruitem
 **Explanation:** Mengukur exploitation rate berdasarkan recruitment relationship atau hubungan antara korban dan pihak yang merekrutnya.<br>
 **Purpose:** Mengidentifikasi pola hubungan rekrutmen yang memiliki tingkat resiko eksploitasi lebih tinggi.
 
-
-
-
-
-
-
-
-
-
 ### cara run
 **Isi koneksi** : isi url_database_neon di FP_load.py, lalu copy file dan paste ke `airflow_spark/scripts/`
 **selanjut nya bisa baca readme di folder airflow**
