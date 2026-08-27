@@ -1,4 +1,4 @@
-## **FINAL PROJCET HUMAN TRAFICKING ANALYSIS**
+## **HUMAN TRAFICKING ANALYSIS**
 
 ## **Data Engineering (Pipeline & Infrastructure)**
 
@@ -32,7 +32,7 @@ Proyek ini melibatkan berbagai stakeholder yang memiliki peran dalam pencegahan 
 
 ## **Data Dictionary**
 
-### A. Demographic Variables
+#### A. Demographic Variables
 
 | Column | Data Type | Definisi |
 |---|---|---|
@@ -40,7 +40,7 @@ Proyek ini melibatkan berbagai stakeholder yang memiliki peran dalam pencegahan 
 | `gender` | str | Gender korban |
 | `citizenship` | str | Kewarganegaraan korban |
 
-### B. Recruitment Relationship
+#### B. Recruitment Relationship
 
 | Column | Data Type | Definisi |
 |---|---|---|
@@ -49,7 +49,7 @@ Proyek ini melibatkan berbagai stakeholder yang memiliki peran dalam pencegahan 
 | `recruiterRelationIntimatePartner` | bool | Indikator apakah recruiter merupakan pasangan atau intimate partner korban |
 | `recruiterRelationOther` | bool | Indikator apakah recruiter memiliki hubungan lain dengan korban atau tidak memiliki hubungan |
 
-### C. Sector
+#### C. Sector
 
 | Column | Data Type | Definisi |
 |---|---|---|
@@ -60,7 +60,7 @@ Proyek ini melibatkan berbagai stakeholder yang memiliki peran dalam pencegahan 
 | `sectorOfSexProstitution` | bool | Indikator apakah eksploitasi berkaitan dengan prostitusi |
 | `sectorOfSexPornography` | bool | Indikator apakah eksploitasi berkaitan dengan pornografi |
 
-### D. Exploitation Outcome
+#### D. Exploitation Outcome
 
 | Column | Data Type | Definisi |
 |---|---|---|
@@ -68,7 +68,7 @@ Proyek ini melibatkan berbagai stakeholder yang memiliki peran dalam pencegahan 
 | `isSexualExploit` | bool | Indikator apakah korban mengalami eksploitasi seksual |
 | `isOtherExploit` | bool | Indikator apakah korban mengalami bentuk eksploitasi lainnya |
 
-### E. Means Outcome
+#### E. Means Outcome
 
 | Column | Data Type | Definisi |
 |---|---|---|
@@ -81,7 +81,7 @@ Proyek ini melibatkan berbagai stakeholder yang memiliki peran dalam pencegahan 
 | `meansExcessiveWorkHours` | bool | Indikator apakah korban diberikan jam kerja yang berlebihan |
 | `meansWithholdDocs` | bool | Indikator apakah dokumen pribadi korban ditahan |
 
-### F. Supporting Variables
+#### F. Supporting Variables
 
 | Column | Data Type | Definisi |
 |---|---|---|
