@@ -13,13 +13,13 @@ Perkembangan Media Sosial dan Online Platforms semakin mempermudah traffickers d
 
 Proyek ini melibatkan berbagai stakeholder yang memiliki peran dalam pencegahan human trafficking, perlindungan korban, penegakan hukum, serta pengembangan kebijakan dan strategi berbasis data.
 
-| Stakeholder | Peran | Kepentingan terhadap Proyek |
-|---|---|---|
-| **United Nations (UN)** | Mengembangkan kerangka kerja internasional, kebijakan, dan kerja sama dalam penanganan perdagangan manusia serta perlindungan hak asasi manusia | Tinggi |
-| **Kepolisian / Aparat Penegak Hukum** | Melakukan penyelidikan kasus, mengidentifikasi pelaku dan jaringan perdagangan manusia, serta mendukung proses penegakan hukum | Tinggi |
+| Stakeholder | Peran |
+|---|---|
+| **United Nations (UN)** | Mengembangkan kerangka kerja internasional, kebijakan, dan kerja sama dalam penanganan perdagangan manusia serta perlindungan hak asasi manusia | 
+| **Kepolisian / Aparat Penegak Hukum** | Melakukan penyelidikan kasus, mengidentifikasi pelaku dan jaringan perdagangan manusia, serta mendukung proses penegakan hukum | 
 | **UNICEF** | Melindungi anak dari perdagangan manusia, eksploitasi, kekerasan, dan bentuk pelanggaran lainnya | Tinggi |
-| **Perusahaan Platform Media Sosial** | Mendeteksi dan mencegah aktivitas terkait perdagangan manusia serta meningkatkan keamanan dan mekanisme pelaporan di platform | Tinggi |
-| **Researchers / Peneliti** | Menganalisis pola perdagangan manusia, mengidentifikasi faktor risiko, dan menghasilkan temuan berbasis data untuk mendukung kebijakan | Sedang–Tinggi |
+| **Perusahaan Platform Media Sosial** | Mendeteksi dan mencegah aktivitas terkait perdagangan manusia serta meningkatkan keamanan dan mekanisme pelaporan di platform | 
+| **Researchers / Peneliti** | Menganalisis pola perdagangan manusia, mengidentifikasi faktor risiko, dan menghasilkan temuan berbasis data untuk mendukung kebijakan | 
 
 ## **SDG**
 
@@ -32,62 +32,76 @@ Proyek ini melibatkan berbagai stakeholder yang memiliki peran dalam pencegahan 
 
 ## **Data Dictionary**
 
-#### A. Demographic Variables
+# Data Dictionary
+
+### A. DEMOGRAPHICS
 
 | Column | Data Type | Definisi |
 |---|---|---|
-| `ageBroad` | str | Kelompok usia korban |
-| `gender` | str | Gender korban |
-| `citizenship` | str | Kewarganegaraan korban |
+| `demographic_id` | serial | Primary key yang menjadi identitas unik setiap data demografi korban |
+| `gender` | varchar(50) | Gender korban |
+| `agebroad` | varchar(50) | Kelompok usia korban |
+| `citizenship` | varchar(100) | Kewarganegaraan korban |
+| `countryofexploitation` | varchar(100) | Negara tempat korban mengalami eksploitasi |
 
-#### B. Recruitment Relationship
+---
 
-| Column | Data Type | Definisi |
-|---|---|---|
-| `recruiterRelationFamily` | bool | Indikator apakah recruiter memiliki hubungan keluarga dengan korban |
-| `recruiterRelationFriend` | bool | Indikator apakah recruiter merupakan teman korban |
-| `recruiterRelationIntimatePartner` | bool | Indikator apakah recruiter merupakan pasangan atau intimate partner korban |
-| `recruiterRelationOther` | bool | Indikator apakah recruiter memiliki hubungan lain dengan korban atau tidak memiliki hubungan |
-
-#### C. Sector
+### B. EXPLOITATION
 
 | Column | Data Type | Definisi |
 |---|---|---|
-| `sectorOfLabourAgriculture` | bool | Indikator apakah eksploitasi berkaitan dengan sektor pertanian |
-| `sectorOfLabourConstruction` | bool | Indikator apakah eksploitasi berkaitan dengan sektor konstruksi |
-| `sectorOfLabourDomesticWork` | bool | Indikator apakah eksploitasi berkaitan dengan pekerjaan domestik |
-| `sectorOfLabourHospitality` | bool | Indikator apakah eksploitasi berkaitan dengan sektor hospitality |
-| `sectorOfSexProstitution` | bool | Indikator apakah eksploitasi berkaitan dengan prostitusi |
-| `sectorOfSexPornography` | bool | Indikator apakah eksploitasi berkaitan dengan pornografi |
+| `exploitation_id` | serial | Primary key yang menjadi identitas unik setiap data eksploitasi |
+| `isforcedlabour` | boolean | Menunjukkan apakah korban mengalami forced labour |
+| `issexualexploit` | boolean | Menunjukkan apakah korban mengalami eksploitasi seksual |
+| `isotherexploit` | boolean | Menunjukkan apakah korban mengalami bentuk eksploitasi lainnya |
+| `sectoroflabouragriculture` | boolean | Menunjukkan apakah eksploitasi berkaitan dengan sektor pertanian |
+| `sectoroflabourconstruction` | boolean | Menunjukkan apakah eksploitasi berkaitan dengan sektor konstruksi |
+| `sectoroflabourdomesticwork` | boolean | Menunjukkan apakah eksploitasi berkaitan dengan pekerjaan domestik |
+| `sectoroflabourhospitality` | boolean | Menunjukkan apakah eksploitasi berkaitan dengan sektor hospitality |
+| `sectorofsexprostitution` | boolean | Menunjukkan apakah eksploitasi berkaitan dengan sektor prostitusi |
+| `sectorofsexpornography` | boolean | Menunjukkan apakah eksploitasi berkaitan dengan sektor pornografi |
 
-#### D. Exploitation Outcome
+---
 
-| Column | Data Type | Definisi |
-|---|---|---|
-| `isForcedLabour` | bool | Indikator apakah korban mengalami forced labour |
-| `isSexualExploit` | bool | Indikator apakah korban mengalami eksploitasi seksual |
-| `isOtherExploit` | bool | Indikator apakah korban mengalami bentuk eksploitasi lainnya |
-
-#### E. Means Outcome
+### C. MEANS
 
 | Column | Data Type | Definisi |
 |---|---|---|
-| `meansDebtBondageEarning` | bool | Indikator apakah debt bondage atau keterikatan melalui utang/penghasilan digunakan sebagai metode eksploitasi |
-| `meansThreats` | bool | Indikator apakah ancaman digunakan dalam proses trafficking atau eksploitasi |
-| `meansAbusePsyPhysSex` | bool | Indikator apakah kekerasan atau penyalahgunaan psikologis, fisik, atau seksual digunakan |
-| `meansFalsePromises` | bool | Indikator apakah janji palsu digunakan untuk merekrut atau mengeksploitasi korban |
-| `meansDrugsAlcohol` | bool | Indikator apakah drugs/alcohol terlibat dalam proses eksploitasi |
-| `meansDenyBasicNeeds` | bool | Indikator apakah kebutuhan dasar korban ditolak atau dibatasi |
-| `meansExcessiveWorkHours` | bool | Indikator apakah korban diberikan jam kerja yang berlebihan |
-| `meansWithholdDocs` | bool | Indikator apakah dokumen pribadi korban ditahan |
+| `means_id` | serial | Primary key yang menjadi identitas unik setiap data metode eksploitasi |
+| `meansdebtbondageearnings` | boolean | Menunjukkan penggunaan debt bondage atau keterikatan melalui utang/penghasilan dalam eksploitasi |
+| `meansthreats` | boolean | Menunjukkan penggunaan ancaman terhadap korban |
+| `meansabusepsyphysex` | boolean | Menunjukkan adanya penyalahgunaan atau kekerasan psikologis, fisik, atau seksual |
+| `meansfalsepromises` | boolean | Menunjukkan penggunaan janji palsu dalam proses recruitment atau eksploitasi |
+| `meansdrugsalcohol` | boolean | Menunjukkan keterlibatan drugs atau alcohol dalam proses eksploitasi |
+| `meansdenybasicneeds` | boolean | Menunjukkan adanya pembatasan atau penolakan kebutuhan dasar korban |
+| `meansexcessiveworkhours` | boolean | Menunjukkan pemberian jam kerja yang berlebihan kepada korban |
+| `meanswithholddocs` | boolean | Menunjukkan adanya penahanan dokumen pribadi korban |
 
-#### F. Supporting Variables
+---
+
+### D. RECRUITER
 
 | Column | Data Type | Definisi |
 |---|---|---|
-| `traffickMonths` | str | Durasi korban mengalami trafficking atau eksploitasi dalam bulan |
-| `CountryOfExploitation` | str | Negara tempat korban mengalami eksploitasi |
-| `yearOfRegistration` | float64 | Tahun ketika kasus korban dicatat atau diregistrasikan |
+| `recruiter_id` | serial | Primary key yang menjadi identitas unik setiap data hubungan recruiter |
+| `recruiterrelationintimatepartner` | boolean | Menunjukkan apakah recruiter merupakan pasangan atau intimate partner korban |
+| `recruiterrelationfriend` | boolean | Menunjukkan apakah recruiter merupakan teman korban |
+| `recruiterrelationfamily` | boolean | Menunjukkan apakah recruiter memiliki hubungan keluarga dengan korban |
+| `recruiterrelationother` | boolean | Menunjukkan apakah recruiter memiliki hubungan lainnya dengan korban |
+
+---
+
+### E. TRAFFICKING CASES
+
+| Column | Data Type | Definisi |
+|---|---|---|
+| `case_id` | serial | Primary key yang menjadi identitas unik setiap kasus trafficking |
+| `yearofregistration` | varchar(10) | Tahun ketika kasus trafficking dicatat atau diregistrasikan |
+| `traffickmonths` | varchar(50) | Durasi korban mengalami trafficking atau eksploitasi dalam bulan |
+| `demographic_id` | integer | Foreign key yang menghubungkan kasus dengan data demografi korban |
+| `means_id` | integer | Foreign key yang menghubungkan kasus dengan metode eksploitasi |
+| `exploitation_id` | integer | Foreign key yang menghubungkan kasus dengan bentuk dan sektor eksploitasi |
+| `recruiter_id` | integer | Foreign key yang menghubungkan kasus dengan hubungan recruiter |
 
 ## **Problem Statement**
 Sulitnya mengidentifikasi kelompok korbann, sektor pekerjaan, dan pola recruitement yang memiliki resiko exploitasi lebih tinggi, serta memahami bagaimana karakteristik tersebut berkiatan dengan bentuk eksploitasi yang dialami korban. Belum diketahui apakah hubungan tertentu antara korban dan recruiter berkaitan dengan tingkat eksploitasi yang lebih tinggi dan kelompok demografis mana yang paling rentan terhadap pola recruitement tersebut.
