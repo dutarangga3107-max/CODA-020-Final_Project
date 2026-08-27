@@ -6,6 +6,7 @@
 
 import logging
 import sys
+import os
 
 import pandas as pd
 from sqlalchemy import create_engine, text
@@ -15,7 +16,7 @@ logging.basicConfig(level=logging.INFO, format="%(asctime)s %(levelname)s %(mess
 logger = logging.getLogger("ctdc_load")
 
 # ================= CONFIG =================
-NEON_DATABASE_URL = "{isi_dengan_url_database_neon_anda}"  # contoh: postgresql+psycopg2://username:password@host:port/dbname
+NEON_DATABASE_URL = os.environ["NEON_DATABASE_URL"]
 
 # Mapping: path file parquet -> nama tabel tujuan di Neon
 # Urutan penting: tabel dimensi di-load lebih dulu, tabel fakta terakhir (karena punya foreign key)
