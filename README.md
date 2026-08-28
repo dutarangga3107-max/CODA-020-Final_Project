@@ -2,22 +2,22 @@
 
 ## **Data Engineering (Pipeline & Infrastructure)**
 ### Database & Data Modeling 
-Proses ini mengubah data kasus *trafficking* dan *exploitation* menjadi struktur basis data relasional yang terorganisasi. Informasi terkait korban, eksploitasi, *recruitment*, dan faktor pendukung dipisahkan ke dalam tabel *fact* dan *dimension* untuk memudahkan analisis risiko dan *profiling* korban[cite: 1].
+Proses ini mengubah data kasus *trafficking* dan *exploitation* menjadi struktur basis data relasional yang terorganisasi. Informasi terkait korban, eksploitasi, *recruitment*, dan faktor pendukung dipisahkan ke dalam tabel *fact* dan *dimension* untuk memudahkan analisis risiko dan *profiling* korban.
 #### Database Architecture 
 ![Star Schema](https://github.com/dutarangga3107-max/CODA-020-Final_Project/blob/main/Schema/Schema.png?raw=true)
 Arsitektur basis data dirancang menggunakan *Star Schema*, yang terdiri dari:
-* **Fact Table (`fact_trafficking_cases`)**: Menyimpan metrik utama kasus dan kunci relasi (*Foreign Keys*)[cite: 1].
-* **Dimension Tables**: Memisahkan atribut detail untuk menghindari redundansi data[cite: 1], yang meliputi:
-  * `dim_demographics`: Umur, *gender*, kewarganegaraan, dan negara eksploitasi[cite: 1].
-  * `dim_exploitation` & `dim_means`: Sektor, jenis eksploitasi, dan cara penjeratan[cite: 1].
-  * `dim_recruiter`: Hubungan perekrut dengan korban[cite: 1].
+* **Fact Table (`fact_trafficking_cases`)**: Menyimpan metrik utama kasus dan kunci relasi (*Foreign Keys*).
+* **Dimension Tables**: Memisahkan atribut detail untuk menghindari redundansi data, yang meliputi:
+  * `dim_demographics`: Umur, *gender*, kewarganegaraan, dan negara eksploitasi.
+  * `dim_exploitation` & `dim_means`: Sektor, jenis eksploitasi, dan cara penjeratan.
+  * `dim_recruiter`: Hubungan perekrut dengan korban.
 ### Data Preparation
 #### Data Type Formatting & Integrity
-* **Penyesuaian Tipe Data**: Mengonfigurasi kolom waktu (seperti `yearOfRegistration`) menjadi format teks (`VARCHAR`) untuk menjaga konsistensi karakteristik data[cite: 1].
-* **Integritas Relasional**: Menerapkan *Primary Key* dan *Foreign Key* yang ketat antar tabel untuk mencegah inkonsistensi data saat proses penggabungan[cite: 1].
+* **Penyesuaian Tipe Data**: Mengonfigurasi kolom waktu (seperti `yearOfRegistration`) menjadi format teks (`VARCHAR`) untuk menjaga konsistensi karakteristik data.
+* **Integritas Relasional**: Menerapkan *Primary Key* dan *Foreign Key* yang ketat antar tabel untuk mencegah inkonsistensi data saat proses penggabungan.
 
 ### SQL & Analytics
-Untuk mendukung analisis dan menjawab berbagai pertanyaan riset (*Key Questions*) tanpa harus menyusun sintaks `JOIN` yang rumit secara berulang, dirancang *SQL Views* terpusat yang menghubungkan *fact table* dengan berbagai tabel dimensi seperti demografi, eksploitasi, dan perekrut[cite: 1].
+Untuk mendukung analisis dan menjawab berbagai pertanyaan riset (*Key Questions*) tanpa harus menyusun sintaks `JOIN` yang rumit secara berulang, dirancang *SQL Views* terpusat yang menghubungkan *fact table* dengan berbagai tabel dimensi seperti demografi, eksploitasi, dan perekrut.
 
 Contoh implementasi *SQL View* untuk analisis demografi:
 
