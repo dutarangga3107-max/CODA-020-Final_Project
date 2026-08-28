@@ -72,7 +72,7 @@ JOIN dim_demographics d ON f.demographic_id = d.demographic_id;
 ```
 ## **Data Dictionary**
 
-### A. DEMOGRAPHICS
+#### A. DEMOGRAPHICS
 
 | Column | Data Type | Definisi |
 |---|---|---|
@@ -84,7 +84,7 @@ JOIN dim_demographics d ON f.demographic_id = d.demographic_id;
 
 ---
 
-### B. EXPLOITATION
+#### B. EXPLOITATION
 
 | Column | Data Type | Definisi |
 |---|---|---|
@@ -101,7 +101,7 @@ JOIN dim_demographics d ON f.demographic_id = d.demographic_id;
 
 ---
 
-### C. MEANS
+#### C. MEANS
 
 | Column | Data Type | Definisi |
 |---|---|---|
@@ -117,7 +117,7 @@ JOIN dim_demographics d ON f.demographic_id = d.demographic_id;
 
 ---
 
-### D. RECRUITER
+#### D. RECRUITER
 
 | Column | Data Type | Definisi |
 |---|---|---|
@@ -129,7 +129,7 @@ JOIN dim_demographics d ON f.demographic_id = d.demographic_id;
 
 ---
 
-### E. TRAFFICKING CASES
+#### E. TRAFFICKING CASES
 
 | Column | Data Type | Definisi |
 |---|---|---|
