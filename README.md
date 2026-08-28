@@ -7,6 +7,34 @@
 **Data Analyst**: Alyssa Jessenia Khadijah
 
 **BI, Documentation & Presentation**: Raka Airlangga
+## **Background**
+kasus Tindak Pidana Perdagangan Orang (TPPO) dan eksploitasi pekerja migran lintas negara seperti sindikat penipuan kerja ilegal berkedok tawaran gaji tinggi di luar negeri serta jeratan kerja paksa tanpa prosedur resmi menunjukkan bahwa human trafficking masih menjadi krisis kemanusiaan global yang kompleks.
+
+Kejahatan ini didorong oleh berbagai faktor multi-dimensi, mulai dari kerentanan demografis korban, risiko spesifik sektor pekerjaan, hingga dinamika trust (kepercayaan) yang dimanipulasi oleh pelaku termasuk kasus di mana identitas atau jaringan pelaku tidak terdeteksi oleh sistem hukum. Memahami bagaimana elemen-elemen ini saling beririsan, khususnya bagaimana pelaku memanfaatkan hubungan kedekatan emosional (seperti keluarga, teman, atau mitra) untuk menjebak korban, sangat krusial untuk mengidentifikasi segmen berisiko tinggi. Dengan menganalisis data korban secara komprehensif, proyek ini bertujuan untuk mengungkap pola kerentanan tersembunyi, sehingga para pemangku kepentingan dapat merancang intervensi yang tepat sasaran dan berbasis data.
+## **Fenomena**
+Perkembangan Media Sosial dan Online Platforms semakin mempermudah traffickers dalam menemukan, mendekati, dan memanipulasi calon korban. Namun, recruitment tidak selalu dilakukan oleh orang asing. Hubungan dekat seperti keluarga, teman atau pasangan dapat menjadi jalur recruitment karena adanya kepercayaan dan kedekatan interpersonal. oleh karena itu, diperlukan analisis untuk mengetahui kelompok korban mana yang paling rentan, sektor eksploitasi apa yang paling berisiko, serta apakah hubungan korban dengan bentuk dan tingkat eksploitasi yang dialami.
+
+## Stakeholder
+
+Proyek ini melibatkan berbagai stakeholder yang memiliki peran dalam pencegahan human trafficking, perlindungan korban, penegakan hukum, serta pengembangan kebijakan dan strategi berbasis data.
+
+| Stakeholder | Peran |
+|---|---|
+| **United Nations (UN)** | Mengembangkan kerangka kerja internasional, kebijakan, dan kerja sama dalam penanganan perdagangan manusia serta perlindungan hak asasi manusia | 
+| **Kepolisian / Aparat Penegak Hukum** | Melakukan penyelidikan kasus, mengidentifikasi pelaku dan jaringan perdagangan manusia, serta mendukung proses penegakan hukum | 
+| **UNICEF** | Melindungi anak dari perdagangan manusia, eksploitasi, kekerasan, dan bentuk pelanggaran lainnya | Tinggi |
+| **Perusahaan Platform Media Sosial** | Mendeteksi dan mencegah aktivitas terkait perdagangan manusia serta meningkatkan keamanan dan mekanisme pelaporan di platform | 
+| **Researchers / Peneliti** | Menganalisis pola perdagangan manusia, mengidentifikasi faktor risiko, dan menghasilkan temuan berbasis data untuk mendukung kebijakan | 
+
+## **SDG**
+
+| SDG | Fokus | Keterkaitan dengan Human Trafficking |
+|---|---|---|
+| **SDG 5** | Kesetaraan Gender | Mengatasi kerentanan berbasis gender serta eksploitasi seksual dalam perdagangan manusia |
+| **SDG 8** | Pekerjaan Layak dan Pertumbuhan Ekonomi | Mengatasi forced labour dan eksploitasi tenaga kerja serta mendukung kondisi kerja yang layak |
+| **SDG 10** | Berkurangnya Kesenjangan | Mengurangi kerentanan kelompok sosial dan ekonomi tertentu terhadap perdagangan dan eksploitasi |
+| **SDG 16** | Perdamaian, Keadilan dan Kelembagaan yang Tangguh | Mendukung perlindungan hak asasi manusia, penegakan hukum, perlindungan korban, dan penguatan institusi |
+
 
 ## **Data Engineering (Pipeline & Infrastructure)**
 ### Database & Data Modeling 
@@ -42,36 +70,6 @@ SELECT
 FROM fact_trafficking_cases f
 JOIN dim_demographics d ON f.demographic_id = d.demographic_id;
 ```
-
-
-## **Background**
-kasus Tindak Pidana Perdagangan Orang (TPPO) dan eksploitasi pekerja migran lintas negara seperti sindikat penipuan kerja ilegal berkedok tawaran gaji tinggi di luar negeri serta jeratan kerja paksa tanpa prosedur resmi menunjukkan bahwa human trafficking masih menjadi krisis kemanusiaan global yang kompleks.
-
-Kejahatan ini didorong oleh berbagai faktor multi-dimensi, mulai dari kerentanan demografis korban, risiko spesifik sektor pekerjaan, hingga dinamika trust (kepercayaan) yang dimanipulasi oleh pelaku termasuk kasus di mana identitas atau jaringan pelaku tidak terdeteksi oleh sistem hukum. Memahami bagaimana elemen-elemen ini saling beririsan, khususnya bagaimana pelaku memanfaatkan hubungan kedekatan emosional (seperti keluarga, teman, atau mitra) untuk menjebak korban, sangat krusial untuk mengidentifikasi segmen berisiko tinggi. Dengan menganalisis data korban secara komprehensif, proyek ini bertujuan untuk mengungkap pola kerentanan tersembunyi, sehingga para pemangku kepentingan dapat merancang intervensi yang tepat sasaran dan berbasis data.
-## **Fenomena**
-Perkembangan Media Sosial dan Online Platforms semakin mempermudah traffickers dalam menemukan, mendekati, dan memanipulasi calon korban. Namun, recruitment tidak selalu dilakukan oleh orang asing. Hubungan dekat seperti keluarga, teman atau pasangan dapat menjadi jalur recruitment karena adanya kepercayaan dan kedekatan interpersonal. oleh karena itu, diperlukan analisis untuk mengetahui kelompok korban mana yang paling rentan, sektor eksploitasi apa yang paling berisiko, serta apakah hubungan korban dengan bentuk dan tingkat eksploitasi yang dialami.
-
-## Stakeholder
-
-Proyek ini melibatkan berbagai stakeholder yang memiliki peran dalam pencegahan human trafficking, perlindungan korban, penegakan hukum, serta pengembangan kebijakan dan strategi berbasis data.
-
-| Stakeholder | Peran |
-|---|---|
-| **United Nations (UN)** | Mengembangkan kerangka kerja internasional, kebijakan, dan kerja sama dalam penanganan perdagangan manusia serta perlindungan hak asasi manusia | 
-| **Kepolisian / Aparat Penegak Hukum** | Melakukan penyelidikan kasus, mengidentifikasi pelaku dan jaringan perdagangan manusia, serta mendukung proses penegakan hukum | 
-| **UNICEF** | Melindungi anak dari perdagangan manusia, eksploitasi, kekerasan, dan bentuk pelanggaran lainnya | Tinggi |
-| **Perusahaan Platform Media Sosial** | Mendeteksi dan mencegah aktivitas terkait perdagangan manusia serta meningkatkan keamanan dan mekanisme pelaporan di platform | 
-| **Researchers / Peneliti** | Menganalisis pola perdagangan manusia, mengidentifikasi faktor risiko, dan menghasilkan temuan berbasis data untuk mendukung kebijakan | 
-
-## **SDG**
-
-| SDG | Fokus | Keterkaitan dengan Human Trafficking |
-|---|---|---|
-| **SDG 5** | Kesetaraan Gender | Mengatasi kerentanan berbasis gender serta eksploitasi seksual dalam perdagangan manusia |
-| **SDG 8** | Pekerjaan Layak dan Pertumbuhan Ekonomi | Mengatasi forced labour dan eksploitasi tenaga kerja serta mendukung kondisi kerja yang layak |
-| **SDG 10** | Berkurangnya Kesenjangan | Mengurangi kerentanan kelompok sosial dan ekonomi tertentu terhadap perdagangan dan eksploitasi |
-| **SDG 16** | Perdamaian, Keadilan dan Kelembagaan yang Tangguh | Mendukung perlindungan hak asasi manusia, penegakan hukum, perlindungan korban, dan penguatan institusi |
-
 ## **Data Dictionary**
 
 ### A. DEMOGRAPHICS
