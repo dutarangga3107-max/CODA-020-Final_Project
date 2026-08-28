@@ -2,8 +2,38 @@
 
 ## **Data Engineering (Pipeline & Infrastructure)**
 ### Database & Data Modeling 
+Proses ini mengubah data kasus *trafficking* dan *exploitation* menjadi struktur basis data relasional yang terorganisasi. Informasi terkait korban, eksploitasi, *recruitment*, dan faktor pendukung dipisahkan ke dalam tabel *fact* dan *dimension* untuk memudahkan analisis risiko dan *profiling* korban[cite: 1].
 #### Database Architecture 
 ![Star Schema](https://github.com/dutarangga3107-max/CODA-020-Final_Project/blob/main/Schema/Schema.png?raw=true)
+Arsitektur basis data dirancang menggunakan *Star Schema*, yang terdiri dari:
+* **Fact Table (`fact_trafficking_cases`)**: Menyimpan metrik utama kasus dan kunci relasi (*Foreign Keys*)[cite: 1].
+* **Dimension Tables**: Memisahkan atribut detail untuk menghindari redundansi data[cite: 1], yang meliputi:
+  * `dim_demographics`: Umur, *gender*, kewarganegaraan, dan negara eksploitasi[cite: 1].
+  * `dim_exploitation` & `dim_means`: Sektor, jenis eksploitasi, dan cara penjeratan[cite: 1].
+  * `dim_recruiter`: Hubungan perekrut dengan korban[cite: 1].
+### Data Preparation
+#### Data Type Formatting & Integrity
+* **Penyesuaian Tipe Data**: Mengonfigurasi kolom waktu (seperti `yearOfRegistration`) menjadi format teks (`VARCHAR`) untuk menjaga konsistensi karakteristik data[cite: 1].
+* **Integritas Relasional**: Menerapkan *Primary Key* dan *Foreign Key* yang ketat antar tabel untuk mencegah inkonsistensi data saat proses penggabungan[cite: 1].
+
+### SQL & Analytics
+Untuk mendukung analisis dan menjawab berbagai pertanyaan riset (*Key Questions*) tanpa harus menyusun sintaks `JOIN` yang rumit secara berulang, dirancang *SQL Views* terpusat yang menghubungkan *fact table* dengan berbagai tabel dimensi seperti demografi, eksploitasi, dan perekrut[cite: 1].
+
+Contoh implementasi *SQL View* untuk analisis demografi:
+
+```sql
+CREATE VIEW analisis_demografi AS
+SELECT
+    f.case_id,
+    f.yearofregistration,
+    f.traffickmonths,
+    d.gender,
+    d.agebroad,
+    d.citizenship,
+    d.countryofexploitation
+FROM fact_trafficking_cases f
+JOIN dim_demographics d ON f.demographic_id = d.demographic_id;
+```
 ## **Background**
 kasus Tindak Pidana Perdagangan Orang (TPPO) dan eksploitasi pekerja migran lintas negara seperti sindikat penipuan kerja ilegal berkedok tawaran gaji tinggi di luar negeri serta jeratan kerja paksa tanpa prosedur resmi menunjukkan bahwa human trafficking masih menjadi krisis kemanusiaan global yang kompleks.
 
