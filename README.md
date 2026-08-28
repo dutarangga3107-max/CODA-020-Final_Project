@@ -3,7 +3,7 @@
 ## **Data Engineering (Pipeline & Infrastructure)**
 ### Database & Data Modeling 
 #### Database Architecture 
-![Star Schema](Schema.png)
+![Star Schema][(Schema.png)](https://github.com/dutarangga3107-max/CODA-020-Final_Project/blob/main/Schema/Schema.png?raw=true)
 ## **Background**
 kasus Tindak Pidana Perdagangan Orang (TPPO) dan eksploitasi pekerja migran lintas negara seperti sindikat penipuan kerja ilegal berkedok tawaran gaji tinggi di luar negeri serta jeratan kerja paksa tanpa prosedur resmi menunjukkan bahwa human trafficking masih menjadi krisis kemanusiaan global yang kompleks.
 
