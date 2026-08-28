@@ -1,8 +1,11 @@
 # **HUMAN TRAFICKING ANALYSIS**
 ### Team: 
 Data Engineer & Airflow Pipeline: Duta Rangga
+
 Database & Data Modeling: Putri Joeliya
+
 Data Analyst: Alyssa Jessenia Khadijah
+
 BI, Documentation & Presentation: Raka Airlangga
 
 ## **Data Engineering (Pipeline & Infrastructure)**
