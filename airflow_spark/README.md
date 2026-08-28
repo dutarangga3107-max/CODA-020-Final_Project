@@ -6,4 +6,4 @@
 - run docker compose using `docker compose -f airflow.yaml up -d`
 
 # Running the python script on Airflow
-- run the script by `sudo -u airflow python /opt/airflow/scripts/script.py` # kalo eror run tanpa sudo
+- run the script by `sudo -u airflow python /opt/airflow/scripts/script.py` # kalo eror saat run, file dag.py bagian bash hapus sudo nya ( run tanpa sudo )
