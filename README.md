@@ -42,6 +42,7 @@ Proyek ini melibatkan berbagai stakeholder yang memiliki peran dalam pencegahan 
 Alur kerja *data engineering* dirancang untuk memproses data dari sumber hingga siap dianalisis melalui beberapa tahapan utama:
 
 #### 1. Alur Proses Pipeline (ETL & Validation)
+![Pipeline](https://github.com/dutarangga3107-max/CODA-020-Final_Project/blob/main/Schema/pipeline%20.png?raw=true)
 * **Extraction**: Membaca dan mengumpulkan data mentah dari *website* CTDC tanpa membebani kinerja sistem sumber.
 * **Data Validation**: Memastikan data mematuhi logika bisnis (misal: validasi usia dan format data yang sesuai).
 * **Transformation**: 
