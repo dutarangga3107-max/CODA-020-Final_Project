@@ -1,4 +1,5 @@
 # **HUMAN TRAFICKING ANALYSIS**
+Resource: (https://www.ctdatacollaborative.org/dataset/global-synthetic-data-and-resources/resource/microdata)
 ### Team: 
 **Data Engineer & Airflow Pipeline**: Duta Rangga
 
