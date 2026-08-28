@@ -37,6 +37,27 @@ Proyek ini melibatkan berbagai stakeholder yang memiliki peran dalam pencegahan 
 
 
 ## **Data Engineering (Pipeline & Infrastructure)**
+### Data Engineering Pipeline
+
+Alur kerja *data engineering* dirancang untuk memproses data dari sumber hingga siap dianalisis melalui beberapa tahapan utama:
+
+#### 1. Alur Proses Pipeline (ETL & Validation)
+* **Extraction**: Membaca dan mengumpulkan data mentah dari *website* CTDC tanpa membebani kinerja sistem sumber.
+* **Data Validation**: Memastikan data mematuhi logika bisnis (misal: validasi usia dan format data yang sesuai).
+* **Transformation**: 
+  * Pembersihan data: Menangani nilai kosong (*NULL*) dan menghapus baris duplikat.
+  * Pemformatan data: Mengubah data mentah menjadi format yang mudah dianalisis.
+* **Loading**: Memindahkan data yang sudah bersih dan valid ke destinasi akhir di basis data Neon.
+
+#### 2. Airflow Orchestration
+* **DAG Structure**: Menggunakan 1 DAG (`FP_dag.py`) dengan 3 *task* linear: `extract` → `transform` → `load`.
+* **Execution**: Eksekusi dijalankan via `BashOperator`, di mana tiap *task* berjalan sebagai *subprocess* Python independen.
+* **Schedule**: Dijadwalkan berjalan setiap hari Sabtu, menit ke-10 hingga 30 (kelipatan 10) pada jam 09:00 pagi.
+* **Retry Policy**: Konfigurasi otomatis 1 kali percobaan ulang (*retry*) dengan jeda 5 menit jika terjadi kegagalan pada *task*.
+
+#### 3. Environment & Infrastructure
+* **Docker Setup**: Menggunakan Airflow via *Docker Compose* dengan *custom image* `airflow-spark` (basis `apache/airflow:2.3.4` yang dilengkapi Java serta pustaka pendukung seperti *great_expectations*, *pandas*, *sqlalchemy*, *beautifulsoup4*, *pyarrow*, dll).
+* **Storage Volume**: Folder direktori `data/`, `dags/`, `scripts/`, dan `logs/` di-mount sebagai *volume* lokal sehingga file *parquet* tetap aman meskipun *container* direstart.
 ### Database & Data Modeling 
 Proses ini mengubah data kasus *trafficking* dan *exploitation* menjadi struktur basis data relasional yang terorganisasi. Informasi terkait korban, eksploitasi, *recruitment*, dan faktor pendukung dipisahkan ke dalam tabel *fact* dan *dimension* untuk memudahkan analisis risiko dan *profiling* korban.
 #### Database Architecture 
