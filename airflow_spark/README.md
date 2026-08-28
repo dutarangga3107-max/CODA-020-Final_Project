@@ -1,6 +1,6 @@
 # Airflow with Pyspark inside
 
-- isi copy & paste .env.example, lalu rename jadi .env dan isi dengan kredensial anda
+- copy & paste .env.example, lalu rename jadi .env dan isi dengan kredensial anda
 - cd `**********/CODA-020-Final_Project/airflow_spark`
 - build docker using docker `docker build -t airflow-spark .`
 - run docker compose using `docker compose -f airflow.yaml up -d`
